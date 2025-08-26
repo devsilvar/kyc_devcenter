@@ -1,8 +1,14 @@
 // /api/verify-phone.ts
-const crypto = require('crypto');
-const axios = require('axios'); 
+// This file contains the serverless function that acts as a secure backend proxy
+// for the Smile ID Phone Number Verification API.
 
-module.exports = async (req, res) => {
+// We are using ES Module syntax (import/export) to be compatible with the
+// "type": "module" setting in package.json.
+import crypto from 'node:crypto';
+import axios from 'axios'; 
+
+// Vercel's serverless function should use a default export for ES Modules.
+export default async function (req, res) {
   // IMPORTANT: Log statements to help you debug on Vercel's dashboard.
   // These will show you what values your function is seeing.
   console.log('--- Function Invoked ---');

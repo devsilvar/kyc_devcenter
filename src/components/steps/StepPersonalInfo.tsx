@@ -66,7 +66,7 @@ export default function StepPersonalInfo({
     try {
       // Call your backend proxy API (not Smile ID directly)
       const response: any = await postJSON(
-        'https://your-project-name.vercel.app/api/verify-phone',
+        'https://kyc-devcenter-u6vv.vercel.app/api/verify-phone',
         {
           phoneNumber: data.phone,
           firstName: data.firstName,
