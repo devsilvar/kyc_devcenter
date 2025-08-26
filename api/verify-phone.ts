@@ -12,6 +12,9 @@ const axios = require('axios'); // You will need to install axios on your backen
 module.exports = async (req, res) => {
   // IMPORTANT:
   // Your API keys and Partner ID must be stored as environment variables on Vercel.
+  console.log('--- Function Invoked ---');
+  console.log('SMILE_ID_PARTNER_ID:', process.env.SMILE_ID_PARTNER_ID ? 'Exists' : 'NOT FOUND');
+  console.log('SMILE_ID_AUTH_TOKEN:', process.env.SMILE_ID_AUTH_TOKEN ? 'Exists' : 'NOT FOUND');
   // DO NOT hardcode them in your code.
   const PARTNER_ID:any = process.env.SMILE_ID_PARTNER_ID;
   const AUTH_TOKEN:any = process.env.SMILE_ID_AUTH_TOKEN;
