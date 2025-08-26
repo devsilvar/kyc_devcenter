@@ -5,7 +5,7 @@
 // Import necessary libraries. 
 // 'crypto' is a built-in Node.js module, so no installation is needed.
 const crypto:any = require('crypto');
-const axios = require('axios'); // You will need to install axios on your backend: `npm install axios`
+const axios:any = require('axios'); // You will need to install axios on your backend: `npm install axios`
 
 // The core function that Vercel will execute.
 // It uses the standard Node.js request (req) and response (res) objects.
