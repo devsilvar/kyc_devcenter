@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import {
-  VerificationSchema,
-  type VerificationInput,
-  type VerificationResult,
-} from '../lib/schema';
+import { VerificationSchema, type VerificationInput } from '../lib/schema';
 import { postJSON } from '../lib/api';
 import { useNavigate } from 'react-router-dom';
 import StepPersonalInfo from './steps/StepPersonalInfo';
