@@ -7,7 +7,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   console.log('--- Function Invoked ---');
   console.log('SMILE_ID_PARTNER_ID:', process.env.SMILE_ID_PARTNER_ID ? 'Exists' : 'NOT FOUND');
   console.log('SMILE_ID_AUTH_TOKEN:', process.env.SMILE_ID_AUTH_TOKEN ? 'Exists' : 'NOT FOUND');
-
   const PARTNER_ID = process.env.SMILE_ID_PARTNER_ID;
   const AUTH_TOKEN = process.env.SMILE_ID_AUTH_TOKEN;
 
